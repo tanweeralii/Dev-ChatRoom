@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    <title>Home::Chatroom</title>
+    <style type="text/css">
+      body{
+       background-image:url("images/background1.jpg");
+       background-margin:100;
+      }
+      .navbar-brand{
+        font-family: 'Mansalva', cursive;
+        color:white;
+      }
+      .navbar-brand:hover{
+        color:grey;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+      }
+      .para{
+        font-family: 'Titillium Web', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+  	  <nav class="navbar navbar-expand-sm fixed-top">
+        <a class="navbar-brand"><i class="far fa-comment-alt icon1"></i></a>
+        <a class="navbar-brand" href="#">Chatroom</a>	
+  	        <ul class="navbar-nav ml-auto">
+  			<li class="nav-item">
+        				<a class="nav-link navee" href="home.html" style="outline:none;">Home</a>
+      			</li>
+      			<li class="nav-item">
+       				<a class="nav-link navee" href="Login.html" style="outline:none;">Login</a>
+      			</li>
+      			<li class="nav-item">
+        				<a class="nav-link navee" href="Register.html" style="outline:none;">Register</a>
+    			</li>
+    		</ul>	
+  	  </nav>
+    </header>
+    <section>
+      <div class="container1">
+          <div class="text1"></div>
+      </div>
+      <div class="container-fluid bg-transparent">
+    		<h1 class="text-white text-center text-capitalize topline">Chatroom</h1>
+        <hr class="w-25 mx-auto">
+     		<button onclick="location.href = 'Register.html';" class="button1 bg-transparent mt-5">Register</button>
+     		<button onclick="location.href = 'Login.html';" class="button2 bg-transparent mt-5">Login</button>
+     	</div>
+    	<div class="container-fluid">
+          <div class="jumbotron mt-5 bg-dark">
+            <h1 class="text-capitalize text-secondary para">Encrypted Data</h1>
+            <p class="text-capitalize text-secondary para">From day one, Chatroom is built to help you stay in touch with friends, share vital information during natural disasters, or seek a better life. Some of your most personal moments are shared with Chtaroom, which is why we store encrypted information. With encrypted, your messages, photos, videos, voice messages and documents are secured from falling into the wrong hands.</p>
+            <p class="text-capitalize text-secondary para">enjoy new feature 'group chat' where you can make friends, share photos, videos and documents to everyone present in chatroom.</p>
+    	</div>
+      <div class="container-fluid">
+        <div class="jumbotron bg-transparent">
+          <div class="about">
+            <h3 class="text-white text-capitalize text-center font-weight-bold about1">About Chatroom</h3>
+            <hr>
+            <p class="text-white">A webapp in which one can send messages, photos, videos and documents to any other person or group of people who are registered.</p>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+          </div>
+          <div class="about">
+            <hr>
+            <h3 class="text-white text-capitalize text-center font-weight-bold about1">Social</h3>
+            <hr>
+            <div class="about3">
+              <a href="https://www.github.com/tanweeralii"><image class="img-thumbnail image" src="images/github.svg" style="width:40px;height:40px;"></a>
+            </div>
+            <div class="about4">
+              <a href="https://www.linkedin.com/in/tanweer-ali-00a46a16b/"><image class="img-thumbnail image" src="images/linkedin.jpeg" style="width:40px;height:40px;"></a>
+            </div>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <div class="footer mt-5">
+              <p class="text-center text-white"><a class="text-center text-white" href="images/background1.jpg" target="_new10">Terms of Services</a></p>
+            </div>
+          </div>
+          <div class="about">
+            <h3 class="text-white text-capitalize text-center font-weight-bold about1">Contact</h3>
+            <hr>
+            <p class="text-white text-center">tanweerali908@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="text.js"></script>
+    <script src="https://kit.fontawesome.com/d82a99eeb8.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(window).scrollTop() > 100){
+              $(".navbar").css({"background-color":"grey"});   
+          }
+          else{
+              $(".navbar").css({"background-color":"transparent"});
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
