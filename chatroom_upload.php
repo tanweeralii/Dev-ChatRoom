@@ -1,5 +1,5 @@
 <?php
-require_once 'autoload.php';
+require_once '/path_to_autoload.php'; //mostly it will be present in "/home/uname/vendor" for aws
 use Aws\S3\S3Client;
 use Aws\S3\Exception\S3Exception;
 $bucketName = '';
