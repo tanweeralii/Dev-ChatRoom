@@ -15,3 +15,10 @@ A basic web-app to chat and share files. Please visit and explore each page of h
 3. Run main.sql.
 4. change the ip address to localhost in socket server and load1.php files
 5. Done
+````
+## Features
+
+> You can reset password if you lost it, by going to Reset page and then an email will be sent to your registered email id with OTP.
+> **AWS S3** is used to store the files to prevent the file access through web scrapping. Even the same user cannot manually click on the link and get the file.
+> ````postgres```' is used to store credentials and chats as it is known for fast fetching and accessing data than mysql.
+> The socket server is hosted on **AWS LightSail** to reduce load on a single server.
