@@ -9,3 +9,9 @@ A basic web-app to chat and share files. Please visit and explore each page of h
 5. **AWS LightSail** instance is used for socket server.
 
 ## Installation
+````
+1. $ git clone https://github.com/tanweeralii/web-whatsapp
+2. Copy all the files to the directory /var/www/html
+3. Run main.sql.
+4. change the ip address to localhost in socket server and load1.php files
+5. Done
