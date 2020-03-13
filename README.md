@@ -19,5 +19,5 @@ A basic web-app to chat and share files. Please visit and explore each page of h
 ## Features
 - You can reset password if you forgot, go to Reset page and an email will be sent to your registered email id with OTP. Use that OTP to reset password.
 - **AWS S3** is used to store the files to prevent the file access through web scrapping.
-- ````postgres``` is used to store credentials and chats as it is known for faster fetching and accessing data than mysql.
+- ````postgres```` is used to store credentials and chats as it is known for faster fetching and accessing data than mysql.
 - The socket server is hosted on **AWS LightSail** to reduce load on a single server.
