@@ -1,5 +1,5 @@
 # web-whatsapp
-A basic web-app to chat and share files. Please visit and explore each page of https://thenewbieprojects.com, Register and then enjoy chatting.
+A basic web-app to chat and share files. Please visit and explore each page of https://thenewbieprojects.com, Register and enjoy chatting.
 
 ## Getting Started
 1. ````php```` is backend lanuage.
