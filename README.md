@@ -1,10 +1,6 @@
 # web-whatsapp
 A basic web-app to chat and share files. Please visit and explore each page of https://thenewbieprojects.com, Register and enjoy chatting.
 
-## Getting Started
-1. **AWS S3** is used to store files.
-2. **AWS LightSail** instance is used for socket server.
-
 ## Features
 - Reset password by getting OTP in your registered email.
 - You can also share files, **AWS S3** is used to store files to prevent file access through web scrapping.
