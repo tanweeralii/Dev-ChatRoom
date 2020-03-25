@@ -9,8 +9,8 @@ A basic web-app to chat and share files. Please visit and explore each page of h
 5. **AWS LightSail** instance is used for socket server.
 
 ## Features
-- You can reset password, go to Reset page and an email will be sent to your registered email with OTP. Use that OTP to reset password.
-- You can also send files, **AWS S3** is used to store files to prevent file access through web scrapping.
+- Reset password by getting OTP in your registered email.
+- You can also share files, **AWS S3** is used to store files to prevent file access through web scrapping.
 - ````postgres```` is used to store credentials and chats as it is known for faster fetching and accessing data than mysql.
 - All the user credentials are salted then hashed and text-messages are encrypted.
 - The socket server is hosted on **AWS LightSail** to reduce load on a single server.
