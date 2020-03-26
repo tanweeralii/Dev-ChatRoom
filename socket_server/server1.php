@@ -1,27 +1,17 @@
 <?php
 $host = "";
 $port = ; 
-if(isset($argv[1]))
-{
-    $host = $argv[1];
-}
-if(isset($argv[2]))
-{
-    $port = $argv[2];
-}
-$null = NULL;
 $ips=array();
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1);
 socket_bind($socket, 0, $port);
-
 socket_listen($socket);
 
 $clients = array($socket);
 $clients_ip=array();
 while (true) {
     $changed = $clients;
-    socket_select($changed, $null, $null, 0, 10);
+    socket_select($changed, 0, 10);
     if (in_array($socket, $changed)) {
         $socket_new = socket_accept($socket);
         socket_getpeername($socket_new, $ip);
@@ -36,7 +26,7 @@ while (true) {
     if(count($changed)>0)
     {
     foreach ($changed as $changed_socket) { 
-        while(socket_recv($changed_socket, $buf, 1024, 0) >= 1)
+        while(socket_recv($changed_socket, $buf, 1024, 0))
         {
             $received_text = unmask($buf);
             $data1 = json_decode($received_text); 
@@ -132,7 +122,7 @@ function mask($text)
         $header = pack('CCNN', $b1, 127, $length);
     return $header.$text;
 }
-function perform_handshaking($receved_header,$client_conn, $host, $port)
+function perform_handshaking($receved_header,$client_conn, $p, $hostort)
 {
     $headers = array();
     $lines = preg_split("/\r\n/", $receved_header);
