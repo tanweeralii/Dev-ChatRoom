@@ -1,0 +1,484 @@
+.message-row{
+    display:grid;
+    grid-template-columns: 70%;
+    margin-bottom: 20px;
+}
+.you-message{
+    justify-content:flex-end;
+    justify-items:flex-end;
+}
+.other-message{
+    justify-items:flex-start;
+}
+.message-text{
+    padding: 9px 14px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.message-time{
+    font-size:0.8rem;
+}
+.message-date{
+    font-size:0.8rem;
+}
+.you-message .message-text{
+    background:#000000;
+    color:white;
+    border:1px solid #000000;
+    border-radius:14px 14px 0 14px;
+}
+.other-message .message-text{
+    background:#000000;
+    color:white;
+    border:1px solid #000000;
+    border-radius:14px 14px 14px 0;
+}
+
+.chatarea1{
+    margin-top:8%;
+    height:76%;
+    overflow:auto;
+    padding:0 20px;
+}
+.internal-error{
+  background-color:rgb(255,232,232);
+  border: 1px solid red;
+  color: red;
+  display: none;
+  font-size: 12px;
+  margin-bottom:10px;
+  margin-top:30px;
+  padding: 10px 25px;
+  max-width:250px;
+}
+.outer-error1{
+  margin-left:20%;
+}
+.outer-error2{
+  margin-left:34%;
+}
+.attach1{
+  float:left;
+  padding-top:12px;
+}
+.attach2:focus{
+  outline: none;
+}
+.mic1{
+  padding-top:15px;
+}
+.message1{
+  width:90%;
+  padding-right:10px;
+}
+.split {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 0px;
+}
+.button5{
+  width:100%;
+  height:60px;
+  padding: 0.5rem 1rem;
+  text-align:left;
+  border:1px solid black;
+  background-color:#222222;
+  display:inline-block;
+  font-family: 'Titillium Web', sans-serif;
+}
+.button5:hover{
+  background-color:#333333;
+  transition-duration:0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+.button5:focus{
+  background-color:#555555;
+  transition-duration:0.2s;
+  -webkit-transition-duration: 0.2s;
+  outline: 0;
+}
+.button6{
+  border:none;
+}
+.button6:focus{
+  outline:none;
+}
+/* Control the left side */
+.left {
+  width:75%;
+  left: 0;
+  background-color: #111;
+  overflow:auto;
+  background:url("images/background1.jpg");
+  background-margin:100;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  width:25%;
+  background-color: red;
+  overflow: auto;
+}
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 10%;
+  background-color:transparent;
+}
+.users_name{
+  position:relative;
+  margin-top:128px;
+  height:100%;
+  width:100%;
+}
+.form1{
+  border-radius:25px;
+}
+.form2{
+  border-radius:25px;
+  width:98%;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: white
+}
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+.area{
+  margin:auto;
+  width:auto;
+  height:100vh;
+  width:100vw;
+}
+.chatbox{
+  overflow:auto;
+  height:100%;
+  width:auto;
+}
+.footer1{
+  position:fixed;
+  bottom:0px;
+  height:60px;
+  background-color:#343a40;
+  border-style:solid;
+  border-width:1px;
+  width:75%;
+  padding-left:10px;
+}
+.friendbox{
+  overflow:auto;
+  width:auto;
+  height:100%;
+}
+.page-footer{
+  font-size:12px;
+  line-height:3px;
+}
+.page-footer1{
+  font-size:12px;
+  position:fixed;
+  margin-bottom:0px;
+  left:46%;
+}
+.main-form{
+  width:450px;
+  margin:auto;
+}
+.icon1{
+  color:white;
+}
+.icon1:hover{
+  color:grey;
+  transition-duration:0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+.container1 {
+  position: relative;
+  margin-top: 150px;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Roboto Mono', monospace;
+  padding: 50px 0px 100px 0px;
+}
+.container2{
+  margin-top:50px;
+}
+.text1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: grey;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown1-content button {
+  color: black;
+  position:absolute;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  font-size:15px;
+  background-color:grey;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown1-content button:hover {background-color: #ddd; transition-duration:0.4s;
+  -webkit-transition-duration: 0.4s;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.image2{
+  filter:invert(1);
+}
+.image3{
+  filter:invert(1);
+   cursor: pointer;
+}
+.image6{
+  cursor:pointer;
+  filter:invert(0.5);
+}
+.image3:hover{
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -webkit-filter:invert(0.7);
+  filter:invert(0.7);
+}
+.image1:hover{
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -webkit-filter:invert(0.7);
+  filter:invert(0.7);
+}
+.image:hover{
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -webkit-filter:invert(1);
+  filter:invert(1);
+}
+.image4{
+  filter:invert(1);
+}
+.image5{
+  filter:invert(1);
+  outline: none;
+}
+.image5:hover{
+  filter:invert(0.8);
+  transition-duration: 0.3s;
+  outline: none;
+}
+.image5:focus{
+  outline: none;
+}
+.footer{
+  line-height:5px;
+  width:100%;
+  font-size:12px;
+  margin-bottom:0px;
+}
+.about{
+  float:left;
+  font-size:15px;
+  width:33.3%;
+  font-family: 'Titillium Web', sans-serif;
+}
+.about3{
+  float:right;
+  width:45%;
+}
+.about4{
+  float:right;
+  width:20%;
+}
+.about1{
+  font-size:18px;
+}
+.about5{
+  float:right;
+}
+.about6{
+  float:right;
+  width:50%;
+}
+.navee{
+	color:white;
+	font-family: 'Roboto Mono', monospace;8298805629
+}
+.navee:hover{
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+	color:red;
+	font-family: 'Roboto Mono', monospace;
+}
+.button1{
+        position:relative;
+        left:40%;
+        color:white;
+        transform:translate(-50%, -50%);
+        text-align:center;
+        font-family: 'Roboto Mono', monospace;
+        font-style:Bold;
+        font-size:18px;
+        font-weight:900;
+        width:140px;
+        padding:5px 20px 5px;
+        border-radius:20px;
+        border:2px solid #FFFFFF;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+}
+.button2{
+        position:relative;
+        transform:translate(-50%, -50%);
+        left:50%;
+        color:white;
+        text-align:center;
+        font-family: 'Roboto Mono', monospace;
+        font-style:Bold;
+        font-size:18px;
+        font-weight:900;
+        width:140px;
+        padding:5px 20px 5px;
+        border-radius:20px;
+        border:2px solid #FFFFFF;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+}
+
+
+.button1:hover{
+	color: red;
+  border: 2px solid red;
+}
+.button2:hover{
+  color: red;
+  border: 2px solid red;
+}
+.button1:focus{
+  outline:0;
+  color:red;
+  border-color:red;
+}
+.button2:focus{
+  outline:0;
+  color:red;
+  border-color:red;
+}
+.button3{
+        position:relative;
+        left:65%;
+        color:white;
+        transform:translate(-50%, -50%);
+        text-align:center;
+        font-family: 'Roboto Mono', monospace;
+        font-style:Bold;
+        font-size:18px;
+        font-weight:900;
+        width:140px;
+        padding:5px 20px 5px;
+        border-radius:10px;
+        border:2px solid #FFFFFF;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+}
+.button3:hover{
+  color: red;
+  border: 2px solid red;
+}
+.button3:focus{
+  outline:0;
+  color:red;
+  border-color:red;
+}
+.button4{
+        position:relative;
+        left:50%;
+        color:white;
+        transform:translate(-50%, -50%);
+        text-align:center;
+        font-family: 'Roboto Mono', monospace;
+        font-style:Bold;
+        font-size:18px;
+        font-weight:900;
+        width:140px;
+        padding:5px 20px 5px;
+        border-radius:10px;
+        border:2px solid #FFFFFF;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+}
+.button4:hover{
+  color: red;
+  border: 2px solid red;
+}
+.button4:focus{
+  outline:0;
+  color:red;
+  border-color:red;
+}
+.button7{
+  background-color:black;
+  border:none;
+
+}
+.topline{
+  font-family: 'Mansalva', cursive;
+  margin-top:10px;
+  font-size:80px;
+}
+.topline1{
+  margin-top:200px;
+  font-family: 'Mansalva', cursive;
+  font-size:80px;
+}
