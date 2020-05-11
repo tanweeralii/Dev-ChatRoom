@@ -5,19 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="scripts/main.css">
+    <link rel="stylesheet" type="text/css" href="scripts/body.css">
     <link rel="stylesheet" type="text/javascript" href="scripts/__chatroom.js">
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/comment.png"/>
-    <script>
-      if(localStorage.length == 0 && sessionStorage.length == 0){
-         window.location = "Login.html";
-      }
-      else if(localStorage.length == 1 && sessionStorage.length == 0){
-        var uname = localStorage.getItem('uname');
-        sessionStorage.setItem('uname', uname);
-      }
-    </script>
     <title>Chatroom</title>
   </head>
   <body>
