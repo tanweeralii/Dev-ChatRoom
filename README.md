@@ -1,4 +1,4 @@
-# web-whatsapp
+# Dev-ChatRoom
 A basic web-app to chat and share files. Please visit and explore each page of https://thenewbieprojects.com, Register and enjoy chatting.
 
 ## Features
